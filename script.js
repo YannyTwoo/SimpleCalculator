@@ -20,7 +20,7 @@ Array.from(calcbtns).forEach((btn)=>{
             document.querySelector('#result').value = expression;
         }
         else if(e.target.innerHTML == '+/-'){
-            expression ='-' + expression;
+            expression ='-(' + expression + ')';
             document.querySelector('#result').value = expression;
         }
         else{
