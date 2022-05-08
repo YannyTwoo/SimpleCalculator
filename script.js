@@ -15,6 +15,14 @@ Array.from(calcbtns).forEach((btn)=>{
             expression ='('+ expression + '/100)*';
             document.querySelector('#result').value = expression;
         }
+        else if(e.target.innerHTML =='x^2'){
+            expression = '(' + expression + '*' + expression + ')';
+            document.querySelector('#result').value = expression;
+        }
+        else if(e.target.innerHTML == '+/-'){
+            expression ='-' + expression;
+            document.querySelector('#result').value = expression;
+        }
         else{
             expression += e.target.innerHTML;
             document.querySelector('#result').value = expression;
